@@ -74,7 +74,7 @@ bot.remove_command("help")
 
 @bot.command()
 async def help(ctx):
-    embed = discord.Embed(title="Walros", description="And old man with a disturbing amount of magical knowledge\nAuthor: Aarick-F\nList of commands are:", color=0xff00ff)
+    embed = discord.Embed(title="Walros", description="An old man with a disturbing amount of magical knowledge\nAuthor: Aarick-F\nList of commands are:", color=0xff00ff)
     embed.add_field(name="$spell 'spell name'", value="Returns details of requested spell", inline=False)
     embed.add_field(name="$roll20 <optional number of D20>", value="Rolls a D20 or multiple D20", inline=False)
     embed.add_field(name="$roll12 <optional number of D12>", value="Rolls a D12 or multiple D12", inline=False)
@@ -101,7 +101,7 @@ async def roll20(ctx, *n):
         result = 0
         if amount < 10001:
             for i in range(amount):
-                result += r.randint(1, 21)
+                result += r.randint(1, 20)
             embed = discord.Embed(title="D20 Roll:", description=result, color=0xff00ff)
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
@@ -116,7 +116,7 @@ async def roll12(ctx, *n):
         result = 0
         if amount < 10001:
             for i in range(amount):
-                result += r.randint(1, 13)
+                result += r.randint(1, 12)
             embed = discord.Embed(title="D12 Roll:", description=result, color=0xff00ff)
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
@@ -131,7 +131,7 @@ async def roll10(ctx, *n):
         result = 0
         if amount < 10001:
             for i in range(amount):
-                result += r.randint(1, 11)
+                result += r.randint(1, 10)
             embed = discord.Embed(title="D10 Roll:", description=result, color=0xff00ff)
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
@@ -146,7 +146,7 @@ async def roll8(ctx, *n):
         result = 0
         if amount < 10001:
             for i in range(amount):
-                result += r.randint(1, 9)
+                result += r.randint(1, 8)
             embed = discord.Embed(title="D8 Roll:", description=result, color=0xff00ff)
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
@@ -161,7 +161,7 @@ async def roll6(ctx, *n):
         result = 0
         if amount < 10001:
             for i in range(amount):
-                result += r.randint(1, 7)
+                result += r.randint(1, 6)
             embed = discord.Embed(title="D6 Roll:", description=result, color=0xff00ff)
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
@@ -176,7 +176,7 @@ async def roll4(ctx, *n):
         result = 0
         if amount < 10001:
             for i in range(amount):
-                result += r.randint(1, 5)
+                result += r.randint(1, 4)
             embed = discord.Embed(title="D4 Roll:", description=result, color=0xff00ff)
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
