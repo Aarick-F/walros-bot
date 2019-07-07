@@ -106,7 +106,7 @@ async def roll20(ctx, *n):
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
     else:
-        embed = discord.Embed(title="D20 Roll:", description=r.randint(1, 21), color=0xff00ff)
+        embed = discord.Embed(title="D20 Roll:", description=r.randint(1, 20), color=0xff00ff)
     await ctx.send(embed=embed)
 
 @bot.command()
@@ -121,7 +121,7 @@ async def roll12(ctx, *n):
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
     else:
-        embed = discord.Embed(title="D12 Roll:", description=r.randint(1, 13), color=0xff00ff)
+        embed = discord.Embed(title="D12 Roll:", description=r.randint(1, 12), color=0xff00ff)
     await ctx.send(embed=embed)
 
 @bot.command()
@@ -136,7 +136,7 @@ async def roll10(ctx, *n):
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
     else:
-        embed = discord.Embed(title="D10 Roll:", description=r.randint(1, 11), color=0xff00ff)
+        embed = discord.Embed(title="D10 Roll:", description=r.randint(1, 10), color=0xff00ff)
     await ctx.send(embed=embed)
 
 @bot.command()
@@ -151,7 +151,7 @@ async def roll8(ctx, *n):
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
     else:
-        embed = discord.Embed(title="D8 Roll:", description=r.randint(1, 9), color=0xff00ff)
+        embed = discord.Embed(title="D8 Roll:", description=r.randint(1, 8), color=0xff00ff)
     await ctx.send(embed=embed)
 
 @bot.command()
@@ -166,7 +166,7 @@ async def roll6(ctx, *n):
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
     else:
-        embed = discord.Embed(title="D6 Roll:", description=r.randint(1, 7), color=0xff00ff)
+        embed = discord.Embed(title="D6 Roll:", description=r.randint(1, 6), color=0xff00ff)
     await ctx.send(embed=embed)
 
 @bot.command()
@@ -181,7 +181,7 @@ async def roll4(ctx, *n):
         else:
             embed = discord.Embed(title="Hell Naw", description="Sorry fam, go find my daughters first.", color=0xff00ff)
     else:
-        embed = discord.Embed(title="D4 Roll:", description=r.randint(1, 5), color=0xff00ff)
+        embed = discord.Embed(title="D4 Roll:", description=r.randint(1, 4), color=0xff00ff)
     await ctx.send(embed=embed)
 
 bot.run(TOKEN) 
